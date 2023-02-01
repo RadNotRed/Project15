@@ -1,6 +1,7 @@
 import java.io.Serializable;
 
 public class Server {
+    // Selection sort method
     public void selectionSort(int[] arr) {
         int n = arr.length;
 
@@ -15,7 +16,7 @@ public class Server {
             arr[i] = temp;
         }
     }
-
+   // Bubble sort method
     public void bubbleSort(int[] arr) {
         int n = arr.length;
         for (int i = 0; i < n-1; i++)
@@ -27,6 +28,7 @@ public class Server {
                 }
     }
 
+    // Insertion sort method
  public void insertionSort(int[] arr) {
     int n = arr.length;
     for (int i = 1; i < n; ++i) {
@@ -41,6 +43,7 @@ public class Server {
     }
 }
 
+// Linear search method
 public Serializable linearSearch(int[] arr, int num) {
     int n = arr.length;
     for (int i = 0; i < n; i++) {
@@ -51,6 +54,7 @@ public Serializable linearSearch(int[] arr, int num) {
     return "Not found";
 }
 
+// Binary search method
 public Serializable binarySearch(int[] arr, int num) {
     int left = 0, right = arr.length - 1;
     while (left <= right) {
